@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="KPDirEntity" representedClassName="KPDirEntity" parentEntity="KPFileEntity" syncable="YES">
+        <relationship name="subFiles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KPFileEntity" inverseName="parentDir" inverseEntity="KPFileEntity" syncable="YES"/>
+    </entity>
+    <entity name="KPFileEntity" representedClassName="KPFileEntity" isAbstract="YES" syncable="YES">
+        <attribute name="isDir" attributeType="Boolean" defaultValueString="NO" indexed="YES" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <attribute name="modDate" attributeType="Date" syncable="YES"/>
+        <attribute name="name" attributeType="String" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <attribute name="owner" attributeType="String" syncable="YES"/>
+        <attribute name="parentDirName" optional="YES" attributeType="String" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="parentDir" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KPDirEntity" inverseName="subFiles" inverseEntity="KPDirEntity" syncable="YES"/>
+    </entity>
+    <entity name="KPUserConfigEntity" representedClassName="KPUserConfigEntity" syncable="YES">
+        <attribute name="enabled" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="ftp_password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ftp_port" attributeType="Integer 16" defaultValueString="21" syncable="YES"/>
+        <attribute name="ftp_protocol" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="ftp_username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="http_port" attributeType="Integer 16" defaultValueString="80" syncable="YES"/>
+        <attribute name="http_protocol" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="is_always_load" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="is_open_touchid" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="last_update_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="path" attributeType="String" defaultValueString="/" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="KPVideoEntity" representedClassName="KPVideoEntity" parentEntity="KPFileEntity" syncable="YES">
+        <attribute name="format" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="KPDirEntity" positionX="-54" positionY="27" width="128" height="60"/>
+        <element name="KPFileEntity" positionX="-63" positionY="-18" width="128" height="180"/>
+        <element name="KPUserConfigEntity" positionX="-27" positionY="81" width="128" height="225"/>
+        <element name="KPVideoEntity" positionX="-36" positionY="36" width="128" height="75"/>
+    </elements>
+</model>

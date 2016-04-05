@@ -1,0 +1,58 @@
+PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - DZNEmptyDataSet (1.7.3)
+  - FTPManager (1.6.5)
+  - JDStatusBarNotification (1.5.3)
+  - kxmovie (0.0.3)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - MBProgressHUD (0.9.2)
+  - MBProgressHUD+BWMExtension (1.0.1):
+    - MBProgressHUD (~> 0.9.1)
+  - RealReachability (1.1.2)
+  - SSKeychain (1.4.0)
+  - VENTouchLock (1.11.0):
+    - SSKeychain (~> 1.0)
+
+DEPENDENCIES:
+  - BlocksKit (~> 2.2.5)
+  - DZNEmptyDataSet
+  - FTPManager (~> 1.6.5)
+  - JDStatusBarNotification
+  - kxmovie (~> 0.0.3)
+  - MagicalRecord (~> 2.3)
+  - MBProgressHUD+BWMExtension (~> 1.0.1)
+  - RealReachability (~> 1.1.2)
+  - VENTouchLock (~> 1.0)
+
+SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
+  FTPManager: e820e8880b0cc85d4db8d9c02322a92493e875aa
+  JDStatusBarNotification: 29413865af11c862c17180610b0f46a21118b412
+  kxmovie: 1372354f4da23ff5bbda198c0dd375b743f8899c
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MBProgressHUD+BWMExtension: d0603a1c0b03ef74cae6a0986d63c0bdf34bedfe
+  RealReachability: ad8975d056156cb80ef1ab7f62b3ef2c39fbfc08
+  SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
+  VENTouchLock: f3145d6fbff243d6692dfb1107b88db06dc216c9
+
+PODFILE CHECKSUM: 6864a2389d34dcb6e5657977723941460e0503be
+
+COCOAPODS: 1.0.0.beta.6
